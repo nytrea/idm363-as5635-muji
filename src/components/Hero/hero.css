@@ -1,0 +1,13 @@
+
+.hero-container{
+    margin: 2rem 8rem 2rem 0;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.hero-image{
+    overflow: hidden;
+    width:90%;
+
+}

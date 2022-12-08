@@ -1,0 +1,40 @@
+.edit-form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+   
+}
+
+.form{
+    width: 30%;
+}
+
+.edit-form-label{
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #810009;
+    margin-bottom: 0.5rem;
+}
+
+.input-field{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.save-btn{
+    background-color: #D7E0E5;
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.save-btn:hover{
+    cursor: pointer;
+    background-color: #cad7dd;
+    transition: ease-in, 0.1s;
+}
