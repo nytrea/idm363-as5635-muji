@@ -1,15 +1,14 @@
 import { useContext, useState, React } from 'react';
 import { format_price } from '../utilities/currency'
 import './edit-form.css';
+import { useSelector } from 'react-redux';
+import uuid from 'react-uuid';
 
 const EditForm = () => {
-    // const [inputValue, setInputValue] = useState('')
-    // const handleChange = event => {
-    // setInputValue(event.target.value)
-
+    const products = useSelector((state) => state.product.value);
 
     return(
-        <div className="edit-form-container">
+        <div className="edit-form-container" id="form-container">
             <form className="form">
                 <label className='edit-form-label'> Title:</label>
                 {/* <input type="text" value={stateValue} onChange={handleChange} /> */}

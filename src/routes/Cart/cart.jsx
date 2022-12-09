@@ -1,11 +1,15 @@
+import { useContext, useState } from "react";
 import Header from '../../components/Header/header'
+import CartItem from '../../components/CartItem/cart-item'
 
-export default function Cart(){
+const Cart = () => {
     return(
         <div>
-            <Header/>
-            <h1> This is the cart page</h1>
+            <Header/>      
+            <CartItem/>
         </div>
-        
     );
 }
+
+
+export default Cart;

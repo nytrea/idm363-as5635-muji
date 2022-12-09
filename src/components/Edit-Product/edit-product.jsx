@@ -3,6 +3,8 @@ import './edit-product.css';
 import { format_price } from '../utilities/currency'
 import { Link } from 'react-router-dom'; 
 
+
+
 const EditProduct = ({item}) => {
     return(
         <div className = 'edit-card-container'>

@@ -1,0 +1,14 @@
+.cart-container{
+    /* background-color: rgb(0, 0, 0);
+    opacity: 10%; */
+    padding: 2rem 10rem;
+}
+
+.cart-details-container{
+    background-color: white;
+    height: 100%;
+}
+
+.cart-header{
+    text-align: center;
+}
