@@ -20,7 +20,7 @@ export const EditForm = () => {
             name: productNewName || product.title, 
             price: productNewPrice || product.price, 
             image: productNewImage || product.image,
-            description: productNewDescription || product.description
+            description: productNewDescription || product.description,
         });
 }
     const { documentId } = useParams()
@@ -58,8 +58,8 @@ export const EditForm = () => {
                     {/* <input type="text" value={stateValue} onChange={handleChange} /> */}
                     <input 
                         name='title' 
-                        type="text" 
-                        placeholder="Title" 
+                        type='text'
+                        placeholder="Product Name" 
                         value={productNewName || product.title} 
                         onChange={(e) => setProductNewName(e.target.value)} 
                         className="input-field"
@@ -69,7 +69,7 @@ export const EditForm = () => {
                     
                     <input 
                     name='price' 
-                    type="text" 
+                    type="number" 
                     placeholder="Price" 
                     value={productNewPrice || product.price} 
                     onChange={(e) => setProductNewPrice(e.target.value)} 
