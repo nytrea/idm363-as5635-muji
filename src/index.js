@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Admin from './routes/Admin/admin';
-import {Cart} from './routes/Cart/cart'
+import Cart from './routes/Cart/cart'
 import Home from './routes/Home/home'
 import Edit from './routes/Edit/edit'
 import ProductPage from './routes/ProductDetails/product-details'

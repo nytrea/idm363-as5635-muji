@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import CartItem from '../../components/CartItem/cart-item'
 import { format_price } from '../../components/utilities/currency'
 
-export function Cart () {
+const Cart = () => {
     const getCart = () => {
         const cart = localStorage.getItem('cart')
         const defaultCart = {cartItems: [], totalValue: 0}
@@ -15,7 +15,6 @@ export function Cart () {
 
     return(
         <>
-        
         <div>
             <div>
                 {cartItems.length === 0 && <h4>Your cart is empty</h4>}
@@ -35,4 +34,4 @@ export function Cart () {
     );
 }
 
-// export default Cart;
+export default Cart;

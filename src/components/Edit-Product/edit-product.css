@@ -1,8 +1,8 @@
 .edit-card-container{
-    width: 20%;
-    height: 15rem;
-    display: inline-block;
-    margin: 2rem;
+    width: 80%;
+    min-height: 22vh;
+    display: flex;
+    margin: 2rem auto;
     border-style: solid;
     border-width: 1.5px;
     border-color: rgb(237, 237, 237);
@@ -24,17 +24,29 @@
     margin: 1rem 0;
 }
 
-.edit-btn-container{
-    display: flex;
-    justify-content: right;
+.edit-image-src{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.edit-description{
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .edit-btn{
     background-color: #D7E0E5;
     width: 6rem;
+    height: 5vh;
     border: none;
-    border-radius: 4px;
-    margin: 2rem 2rem 1rem 2rem;
+    border-radius: 3px;
+    margin: 2rem 0 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem 2rem;
+   
 }
 
 .edit-btn:hover{
@@ -43,10 +55,7 @@
     transition: ease-in, 0.1s;
 }
 
-.edit-btn-text{
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-}
+
 
 
 

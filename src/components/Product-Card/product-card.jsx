@@ -6,9 +6,9 @@ import { db } from '../../firestore';
 import { Link } from 'react-router-dom'; 
 
 const Product = ({item}) => {
-    const handleAddToCart = (product) => {
-        addItemToCart(product)
-      }
+      const handleAddToCart = (product) => {
+          addItemToCart(product)
+        }
 
       const addItemToCart = (product) => {
         const cart = JSON.parse(localStorage.getItem('cart')) || {}
@@ -18,7 +18,6 @@ const Product = ({item}) => {
             //quantity is a built-in feature
           itemInCart.quantity += 1
         } else {
-          
           cart.cartItems.push({ id:product.id, name:product.title, price : product.price, image:product.image, quantity: 1 })
         }
         cart["totalSum"] = cart.cartItems.reduce((acc, product) => acc + product.price * product.quantity, 0)
@@ -49,4 +48,4 @@ const Product = ({item}) => {
        
     )
 }
-export default(Product);
+export default Product;

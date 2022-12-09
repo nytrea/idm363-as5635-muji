@@ -1,7 +1,7 @@
 .edit-form-container{
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 4rem;
    
 }
 
@@ -10,7 +10,7 @@
 }
 
 .edit-form-label{
-    display: flex;
+    padding-bottom:2rem;
     font-size: 1.4rem;
     font-weight: 500;
     color: #810009;
@@ -20,7 +20,10 @@
 .input-field{
     width: 100%;
     height: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+}
+
+.save-btn-container{
 }
 
 .save-btn{
