@@ -8,7 +8,7 @@ const Cart = () => {
         const defaultCart = {cartItems: [], totalValue: 0}
         return cart ? JSON.parse(cart) : defaultCart
       }
-
+    
     const cart = getCart()
     const cartItems = cart.cartItems
     const totalValue = cart.totalValue

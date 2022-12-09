@@ -103,7 +103,7 @@ export const EditForm = () => {
             </div>
 
             <div className="btn-container">
-                <button className='btn' > <Link to="/admin" class="back-btn">Back</Link> </button>
+                <button className='btn' > <Link to="/admin" className="back-btn">Back</Link> </button>
                 <button className='btn' onClick={updateProduct}> Save</button>
                 
             </div>
