@@ -27,7 +27,7 @@ const Cart = () => {
             </div>
             
             <div className='mt-5 mb-5'>
-            <h4 className='text-center'>Total Value: {format_price(totalValue)}</h4>
+            <h4 className='text-center'>Total Value: {totalValue}</h4>
             </div>
         </div>
         </>
