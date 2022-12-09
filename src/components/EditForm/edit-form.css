@@ -1,7 +1,7 @@
 .edit-form-container{
     display: flex;
     justify-content: center;
-    margin: 4rem;
+    margin: 4rem 0 1rem 0;
    
 }
 
@@ -23,21 +23,37 @@
     margin: 1rem 0;
 }
 
-.save-btn-container{
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
 }
 
-.save-btn{
+.btn{
     background-color: #D7E0E5;
     border: none;
-    width: 6rem;
+    width: 7rem;
     height: 3rem;
     border-radius: 5px;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 550;
+    display: flex-end;
+    margin: 0 1rem;
 }
 
-.save-btn:hover{
+.back-btn{
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover{
     cursor: pointer;
     background-color: #cad7dd;
     transition: ease-in, 0.1s;
+}
+
+@media all and (max-width: 700px){
+    .form{
+        width: 60%;
+    }
 }

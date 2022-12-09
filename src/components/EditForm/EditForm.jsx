@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom'
 import './edit-form.css';
 import { db } from '../../firestore';
 import { doc, getDoc, collection, updateDoc } from "firebase/firestore";
+import { Link } from 'react-router-dom'; 
 
 export const EditForm = () => {
 
@@ -50,57 +51,64 @@ export const EditForm = () => {
 
 
     return(
-        <div className="edit-form-container" id="form-container">
-            <form className="form">
-                <label className='edit-form-label'> Title:</label>
-                {/* <input type="text" value={stateValue} onChange={handleChange} /> */}
-                <input 
-                    name='title' 
+        <div>
+            <div className="edit-form-container" id="form-container">
+                <form className="form">
+                    <label className='edit-form-label'> Title:</label>
+                    {/* <input type="text" value={stateValue} onChange={handleChange} /> */}
+                    <input 
+                        name='title' 
+                        type="text" 
+                        placeholder="Title" 
+                        value={productNewName || product.title} 
+                        onChange={(e) => setProductNewName(e.target.value)} 
+                        className="input-field"
+                    />
+                    
+                    <label className='edit-form-label'> Price:</label>
+                    
+                    <input 
+                    name='price' 
                     type="text" 
-                    placeholder="Title" 
-                    value={productNewName || product.title} 
-                    onChange={(e) => setProductNewName(e.target.value)} 
+                    placeholder="Price" 
+                    value={productNewPrice || product.price} 
+                    onChange={(e) => setProductNewPrice(e.target.value)} 
                     className="input-field"
-                />
-                
-                <label className='edit-form-label'> Price:</label>
-                
-                <input 
-                name='price' 
-                type="text" 
-                placeholder="Price" 
-                value={productNewPrice || product.price} 
-                onChange={(e) => setProductNewPrice(e.target.value)} 
-                className="input-field"
-                />
+                    />
 
-                <label className='edit-form-label'> Image Source:</label>
+                    <label className='edit-form-label'> Image Source:</label>
 
-                <input 
-                    name='image' 
-                    type="text" 
-                    placeholder="Image Source" 
-                    value={productNewImage || product.image} 
-                    onChange={(e) => setProductNewImage(e.target.value)} 
-                    className="input-field"
-                />
+                    <input 
+                        name='image' 
+                        type="text" 
+                        placeholder="Image Source" 
+                        value={productNewImage || product.image} 
+                        onChange={(e) => setProductNewImage(e.target.value)} 
+                        className="input-field"
+                    />
 
-                <label className='edit-form-label'> Description:</label>
+                    <label className='edit-form-label'> Description:</label>
 
-                <input 
-                    name='description' 
-                    type="text" 
-                    placeholder="Description" 
-                    value={productNewDescription || product.description} 
-                    onChange={(e) => setProductNewDescription(e.target.value)} 
-                    className="input-field"
-                />
+                    <input 
+                        name='description' 
+                        type="text" 
+                        placeholder="Description" 
+                        value={productNewDescription || product.description} 
+                        onChange={(e) => setProductNewDescription(e.target.value)} 
+                        className="input-field"
+                    />
                 </form>
+
                 
-                <div className="save-btn-container">
-                    <button className='save-btn' onClick={updateProduct}> Save Changes</button>
-                </div>
+            </div>
+
+            <div className="btn-container">
+                <button className='btn' > <Link to="/admin" class="back-btn">Back</Link> </button>
+                <button className='btn' onClick={updateProduct}> Save</button>
+                
+            </div>
         </div>
+        
         
     );
 
