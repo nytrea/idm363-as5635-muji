@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { collection, onSnapshot, query, getDocs } from 'firebase/firestore';
 import { db } from '../../firestore';
-import Header from '../../components/Header/header'
 import Product from '../../components/Product-Card/product-card'
 import './home.css';
 import Hero from '../../components/Hero/hero'
@@ -38,7 +37,6 @@ export default function Home(){
 
     return(
         <div>
-            <Header/>
             <Hero/>
             {/* <Product/> */}
 

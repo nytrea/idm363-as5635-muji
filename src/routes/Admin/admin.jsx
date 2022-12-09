@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { collection, onSnapshot, query, getDocs } from 'firebase/firestore';
 import { db } from '../../firestore';
-import Header from '../../components/Header/header'
 import EditProduct from '../../components/Edit-Product/edit-product'
 // import ProductTable from '../../components/product-table/edit-product-table'
 import './admin.css';
@@ -36,7 +35,6 @@ export default function Admin(){
 
     return(
         <div>
-            <Header/>
             {/* <Product/> */}
 
             <div className = "products-container">

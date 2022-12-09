@@ -8,6 +8,8 @@ import Cart from './routes/Cart/cart'
 import Home from './routes/Home/home'
 import Edit from './routes/Edit/edit'
 import ProductPage from './routes/ProductDetails/product-details'
+import {EditForm} from './components/EditForm/EditForm'
+import Header from './components/Header/header'
 
 
 import {
@@ -21,12 +23,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
    {/* <App /> */}
+   <Header/>
    <Routes>
      <Route path="/" element={<Home />} />
      <Route path="/admin" element={<Admin />} />
      <Route path="/cart" element={<Cart />} />
      <Route path="/edit" element={<Edit />} />
+     <Route path="/edit/:documentId" element={<EditForm />} />
      <Route path="/details" element={<ProductPage />} />
+
    </Routes>
  </BrowserRouter>,
 

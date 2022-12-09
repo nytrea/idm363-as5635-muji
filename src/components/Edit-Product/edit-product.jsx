@@ -16,10 +16,11 @@ const EditProduct = ({item}) => {
             </div>
 
             <div className="edit-btn-container">
-                <Link to="/edit">
-                    <button className='edit-btn'>
-                        <h1 className="edit-btn-text">Edit</h1>
-                    </button>
+                <Link to={`/edit/${item.id}`}>
+                    {/* <button className='edit-btn'>
+                        
+                    </button> */}
+                    <h1 className="edit-btn-text">Edit</h1>
                 </Link>
                 
             </div>
