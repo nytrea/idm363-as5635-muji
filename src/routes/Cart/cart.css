@@ -12,3 +12,13 @@
 .cart-header{
     text-align: center;
 }
+
+.cart-title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.total-value{
+    text-align: center;
+    font-size: 1.4rem;
+}

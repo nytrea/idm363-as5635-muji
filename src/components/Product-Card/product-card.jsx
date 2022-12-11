@@ -2,14 +2,16 @@ import React from 'react';
 import './product-card.css';
 import { format_price } from '../utilities/currency'
 import { collection, onSnapshot, query, getDocs } from 'firebase/firestore';
-import { db } from '../../firestore';
 import { Link } from 'react-router-dom'; 
+import LinkContainer from "react-router-bootstrap/LinkContainer";
+
 
 const Product = ({item}) => {
       const handleAddToCart = (product) => {
           addItemToCart(product)
         }
 
+    
       const addItemToCart = (product) => {
         const cart = JSON.parse(localStorage.getItem('cart')) || {}
         cart.cartItems = cart.cartItems || []
@@ -18,7 +20,7 @@ const Product = ({item}) => {
             //quantity is a built-in feature
           itemInCart.quantity += 1
         } else {
-          cart.cartItems.push({ id:product.id, name:product.title, price : product.price, image:product.image, quantity: 1 })
+          cart.cartItems.push({ id:product.id, name: product.title, price : product.price, image:product.image, quantity: 1 })
         }
         cart["totalSum"] = cart.cartItems.reduce((acc, product) => acc + product.price * product.quantity, 0)
         localStorage.setItem('cart', JSON.stringify(cart))

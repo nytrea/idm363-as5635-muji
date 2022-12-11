@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import CartItem from '../../components/CartItem/cart-item'
 import { format_price } from '../../components/utilities/currency'
+import './cart.css'
+
 
 const Cart = () => {
     const getCart = () => {
@@ -16,6 +18,7 @@ const Cart = () => {
     return(
         <>
         <div>
+            <h4 className='cart-title'> Items In Your Cart</h4>
             <div>
                 {cartItems.length === 0 && <h4>Your cart is empty</h4>}
             </div>
@@ -27,7 +30,7 @@ const Cart = () => {
             </div>
             
             <div className='mt-5 mb-5'>
-            <h4 className='text-center'>Total Value: {totalValue}</h4>
+            <h4 className='total-value'>Total Value: {totalValue}</h4>
             </div>
         </div>
         </>

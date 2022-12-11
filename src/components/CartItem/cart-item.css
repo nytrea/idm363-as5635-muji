@@ -2,3 +2,41 @@
     text-align: center;
     margin: 4rem 0;
 }
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cart-item-container-main{
+    width: 20rem;
+    background-color: #F0ECDB;
+    border-radius: 3px;
+}
+
+.cart-item-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item-quantity-container{
+    display: flex;
+    justify-content: center;
+}
+
+.itemQuantity{
+    text-align: right;
+    margin-left: 11rem;
+    padding-bottom: 2rem;
+}
+
+.productTitle{
+    margin-left: 1rem;
+}
+
+.productPrice{
+    display: block;
+    padding: 2rem 2rem 0 2rem;
+}

@@ -31,12 +31,10 @@ export default function Admin(){
      useEffect(() => {
         console.log(muji_products);
     }, [muji_products])
-    
 
     return(
         <div>
             {/* <Product/> */}
-
             <div className = "products-container">
                 <div className="product-card">
                     {muji_products.map((product) => {
