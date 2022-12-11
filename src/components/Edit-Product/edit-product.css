@@ -1,6 +1,6 @@
 .edit-card-container{
     width: 80%;
-    min-height: 22vh;
+    min-height: 24vh;
     display: flex;
     margin: 2rem auto;
     border-style: solid;
@@ -41,11 +41,11 @@
     border: none;
     border-radius: 3px;
     margin: 2rem 0 2rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.2rem;
    
 }
 

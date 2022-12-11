@@ -13,7 +13,7 @@ const Cart = () => {
     
     const cart = getCart()
     const cartItems = cart.cartItems
-    const totalValue = cart.totalValue
+    const totalValue = cart.totalSum
 
     return(
         <>
@@ -30,7 +30,7 @@ const Cart = () => {
             </div>
             
             <div className='mt-5 mb-5'>
-            <h4 className='total-value'>Total Value: {totalValue}</h4>
+            <h4 className='total-value'>Total Value: {format_price(totalValue)}</h4>
             </div>
         </div>
         </>
