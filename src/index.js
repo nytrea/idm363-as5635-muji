@@ -30,7 +30,7 @@ root.render(
      <Route path="/cart" element={<Cart />} />
      <Route path="/edit" element={<Edit />} />
      <Route path="/edit/:documentId" element={<EditForm />} />
-     <Route path="/details" element={<ProductPage />} />
+     <Route path="/details:documenttID" element={<ProductPage />} />
 
    </Routes>
  </BrowserRouter>,

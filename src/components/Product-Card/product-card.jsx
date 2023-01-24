@@ -10,7 +10,6 @@ const Product = ({item}) => {
       const handleAddToCart = (product) => {
           addItemToCart(product)
         }
-
     
       const addItemToCart = (product) => {
         const cart = JSON.parse(localStorage.getItem('cart')) || {}
@@ -31,11 +30,14 @@ const Product = ({item}) => {
         
         <div className = 'product-card-container'>
             <div>
-            <Link to="/details"></Link>
             </div>
-                <div className = 'image-container'>
-                    <img src={item.image} className="product-image"></img>
+            <Link to={`/details/${item.id}`}>
+              <div className = 'image-container'>
+                  <img src={item.image} className="product-image"></img>
                 </div>
+            </Link>
+            
+                
                 <div className='product-card-info'>
                     <h3 className="product-title">{item.title}</h3>
                     <h3 className="product-price">{format_price(item.price)}</h3>
